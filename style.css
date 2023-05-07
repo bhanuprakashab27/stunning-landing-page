@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    
+}
+.container{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+/*--- header---- */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 5px 20px;
+    
+}
+header img{
+    width: 100px;
+    margin-left: 40px;
+}
+header nav ul li{
+    display:inline-block;
+    margin: 0 10px;
+    text-transform: capitalize;
+    padding: 0 20px;
+    color: lightgrey;
+
+}
+header nav ul li:hover,
+header nav ul li.active{
+    color:black;
+    text-decoration: underline;
+    text-decoration-color: #8071d0;
+    cursor: pointer;
+}
+.btn{
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+header a{
+    color: #a389cc;
+    background-color: #ffd8db;
+
+}  
+/* ------main-------*/
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 30px 5px 40px 40px;
+    text-align:center;
+} 
+.left{
+    margin-left: 80px;
+    text-align: left;
+    padding-right:20px;
+}
+.left h1{
+    font-size: 50px;
+}
+.left h1 span{
+    border: 4px solid blue;
+    font-size: 1px;
+}
+.left p{
+    font-size: 15px;
+    color: rgb(61, 60, 60);
+}
+.left a{
+    display:inline-block;
+    color:#ffffff;
+    background-color:#5243c0;
+    overflow:hidden;
+}
+.arrow{
+    height:45px;
+}
+.allcard{
+    margin-top:50px;
+}
+.cards{
+    border:none;
+    border-radius:8px;
+    margin:10px 0px;
+    background-color:rgb(240, 240, 240);
+    display:flex;
+    align-items:center;
+    font-size:14px;
+    box-shadow:5px 5px 3px rgb(227, 227, 227);
+}
+.cards img{
+    margin:0px 10px;
+}
+.cards p{
+    width:120px;
+    font-size:14px;
+    font-weight:bold;
+}
+.date{
+    margin:0px 25px;
+    color:rgb(177, 177, 177);
+}
+.tick{
+    width:26px;
+    border-radius:20px;
+    margin-left:15px;
+}
+.tick.pink{
+    border:6px solid #fed7da;
+}
+.tick.red{
+    border:6px solid #fd6534;
+}
+.tick.green{
+    border:6px solid #9ed095;
+}
+.tick.yellow{
+    border:6px solid #ffe4a0;
+}
+.cards:hover,
+.cards.active{
+    background-color:white;
+    cursor:pointer;
+}
+.cards .blue{
+    display:none;
+}
+.cards:hover .grey{
+    display:none;
+}
+.cards:hover .blue{
+    display:block;
+}
+
+
+
+
+
